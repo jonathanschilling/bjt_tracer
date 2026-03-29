@@ -2,6 +2,8 @@
 
 Trace the I_c vs. V_ce characteristic of BJTs for varying I_b.
 
+![Example run for BC547](data/run_1.png)
+
 ## Circuit
 
 A [DAC4813 connected to an Arduino](https://github.com/jonathanschilling/arduino_dac4813) is used to output two voltages.

@@ -4,12 +4,12 @@ Trace the I_c vs. V_ce characteristic of BJTs for varying I_b.
 
 ## Circuit
 
-A DAC4813 connected to an Arduino is used to output two voltages.
+A [DAC4813 connected to an Arduino](https://github.com/jonathanschilling/arduino_dac4813) is used to output two voltages.
 CH1 is connected via a 1x buffer (LT1010) through a shunt resistor of 10 Ohms to the collector of the BJT.
 CH2 is connected via a voltage-controlled current source (10mA out for 10V in) to the basis of the BJT.
 
 The collector current I_c is measured as the voltage drop over the shunt resistor of 10 Ohms via a 10x amplifying difference amplifier.
-The resulting voltage (I_c * 10 Ohms * 10) is measured using the SERAI-8-12 USB ADC with MAX186 at its input 1.
+The resulting voltage (I_c * 10 Ohms * 10) is measured using the [SERAI-8-12 USB ADC with MAX186](https://github.com/jonathanschilling/serai-8-12-usb) at its input 1.
 The characteristic of this ADC input is as follows:
 
 | input voltage | ADC count |
